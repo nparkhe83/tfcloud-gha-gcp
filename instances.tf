@@ -24,7 +24,7 @@ resource "google_compute_instance" "web" {
 }
 
 resource "google_compute_instance" "web1" {
-  name         = "apache-1"
+  name         = "apache-2"
   machine_type = "f1-micro"
   zone         = "us-central1-a"
 
