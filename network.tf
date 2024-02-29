@@ -2,7 +2,7 @@ resource "google_compute_firewall" "allow_web" {
   name          = "allow-web"
   direction     = "INGRESS"
   priority      = 1000
-  network       = default
+  network       = "default_net"
   source_ranges = ["0.0.0.0/0"]
 
   allow {
