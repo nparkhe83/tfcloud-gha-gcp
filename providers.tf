@@ -13,6 +13,6 @@ terraform {
 }
 
 provider "google" {
-  credentials = var.GOOGLE_CREDENTIALS
+  credentials = var.GOOGLE_CREDENTIALS_1
   region      = "us-central1"
 }
