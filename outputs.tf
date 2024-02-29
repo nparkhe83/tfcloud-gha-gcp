@@ -1,3 +1,3 @@
-output "temp-address" {
+output "address" {
   value = google_compute_instance.web
 }
