@@ -20,10 +20,10 @@ jobs:
       contents: read
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Upload Configuration
-        uses: hashicorp/tfc-workflows-github/actions/upload-configuration@v1.0.0
+        uses: hashicorp/tfc-workflows-github/actions/upload-configuration@v1.2.0
         id: apply-upload
         with:
           workspace: ${{ env.TF_WORKSPACE }}
