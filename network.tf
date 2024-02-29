@@ -12,7 +12,7 @@ resource "google_compute_firewall" "allow_web" {
 }
 
 resource "google_compute_network" "vpc_network" {
-  name                    = "default"
+  name                    = "default_net"
   auto_create_subnetworks = false
 }
 
