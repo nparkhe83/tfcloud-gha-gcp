@@ -1,3 +1,4 @@
 output "address" {
-  value = google_compute_instance.web
+  value     = google_compute_instance.web
+  sensitive = true
 }
