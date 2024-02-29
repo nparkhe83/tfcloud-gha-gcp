@@ -2,7 +2,7 @@ resource "google_compute_firewall" "allow_web" {
   name          = "allow-web"
   direction     = "INGRESS"
   priority      = 1000
-  network       = "default_net"
+  network       = "default-net"
   source_ranges = ["0.0.0.0/0"]
 
   allow {
@@ -12,12 +12,12 @@ resource "google_compute_firewall" "allow_web" {
 }
 
 resource "google_compute_network" "vpc_network" {
-  name                    = "default_net"
+  name                    = "default-net"
   auto_create_subnetworks = false
 }
 
 resource "google_compute_subnetwork" "jsd_subnetwork" {
-  name          = "default_subnet"
+  name          = "default-subnet"
   ip_cidr_range = "10.0.20.0/24"
   region        = "us-central1"
   network       = google_compute_network.vpc_network.id
