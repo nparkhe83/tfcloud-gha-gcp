@@ -1,3 +1,3 @@
-output "address1" {
+output "address" {
   value = google_compute_instance.web
 }
